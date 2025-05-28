@@ -1,6 +1,8 @@
-import sys
-sys.path.insert(0, './api')
-from index import app
 
-from mangum import Mangum
-handler = Mangum(app)
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "GSM CRM Backend is live!"}

@@ -1,6 +1,8 @@
+# netlify.toml for backend functions
+
 [build]
-  command = "npm run build --prefix frontend"
-  publish = "frontend"
+  command = "pip install -r requirements.txt"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/api/*"
