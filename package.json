@@ -1,0 +1,7 @@
+{
+  "name": "gsm-crm-fullstack",
+  "scripts": {
+    "start": "npm run start --prefix frontend",
+    "build": "npm run build --prefix frontend"
+  }
+}
